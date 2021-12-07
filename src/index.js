@@ -1,5 +1,4 @@
-import { helloWorld, goodByeWorld } from "./test";
+import loadHamburgerMenu from './modules/navigation/hamburger';
 
-helloWorld();
-goodByeWorld();
+loadHamburgerMenu();
 

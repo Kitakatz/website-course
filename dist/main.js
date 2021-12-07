@@ -16,17 +16,17 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _test__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./test */ \"./src/test.js\");\n\n(0,_test__WEBPACK_IMPORTED_MODULE_0__.helloWorld)();\n(0,_test__WEBPACK_IMPORTED_MODULE_0__.goodByeWorld)();\n\n//# sourceURL=webpack://my-webpack-project/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_navigation_hamburger__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/navigation/hamburger */ \"./src/modules/navigation/hamburger/index.js\");\n\n(0,_modules_navigation_hamburger__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n//# sourceURL=webpack://my-webpack-project/./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/test.js":
-/*!*********************!*\
-  !*** ./src/test.js ***!
-  \*********************/
+/***/ "./src/modules/navigation/hamburger/index.js":
+/*!***************************************************!*\
+  !*** ./src/modules/navigation/hamburger/index.js ***!
+  \***************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"helloWorld\": () => (/* binding */ helloWorld),\n/* harmony export */   \"goodByeWorld\": () => (/* binding */ goodByeWorld)\n/* harmony export */ });\nfunction helloWorld() {\n  console.log(\"Hello world\");\n}\n;\nfunction goodByeWorld() {\n  console.log(\"goo bai wurl\");\n}\n;\n\n//# sourceURL=webpack://my-webpack-project/./src/test.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction loadHamburgerMenu() {\n  var hamburgerMenu = document.getElementById('hamburger-menu');\n  var menu = document.getElementById('menu');\n  var overlay = document.getElementById('overlay');\n  var isToggled = false;\n\n  menu.onclick = function () {\n    isToggled = !isToggled;\n    console.log('isToggled is now set to: ', isToggled);\n    overlay.classList.remove('overlay-hidden');\n    overlay.classList.add('overlay-shown');\n    console.log(overlay.classList);\n  };\n}\n\n;\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadHamburgerMenu);\n\n//# sourceURL=webpack://my-webpack-project/./src/modules/navigation/hamburger/index.js?");
 
 /***/ })
 
