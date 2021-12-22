@@ -12,7 +12,6 @@ function loadHamburgerMenu() {
 
         menuItem.classList.add('active');
     });
-
 };
 
 export default loadHamburgerMenu;
