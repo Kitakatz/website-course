@@ -15,6 +15,10 @@
     display: flex;
 }
 
+#experience .row-container {
+    flex-direction: column;
+}
+
 #experience .column {
     width: 100%;
     margin-top: 15px;
@@ -27,6 +31,7 @@
     border: none;
     font-family: "Poppins-Medium";
     text-transform: uppercase;
+    line-height: 42px;
     font-size: 48px;
     flex-direction: row;
     justify-content: space-evenly;
@@ -47,6 +52,20 @@
     justify-content: space-evenly;
     width: 100%;
     margin-top: 0px;
+}
+
+@media (min-width: 850px) {
+    #experience.container {
+        padding: 75px 0;
+    }
+
+    #experience .row {
+        flex-direction: row;
+    }
+
+    #one {
+        margin-bottom: 30px;
+    }
 }
 
 @media (min-width: 855px){
