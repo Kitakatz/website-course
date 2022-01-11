@@ -9,9 +9,9 @@
     margin-bottom: 30px;
 }
 
-#card-testimony .card-inner-container {
+/* #card-testimony .card-inner-container {
   
-}
+} */
 
 #card-testimony .review-stars {
     display: flex;
@@ -84,4 +84,11 @@
 #card-testimony .review-author .column-right .message {
     width: 42px;
     height: 38px;
+}
+
+@media (min-width: 855px) {
+    #card-testimony.container {
+        max-width: 585px;
+        margin: 0 25px;
+    }
 }

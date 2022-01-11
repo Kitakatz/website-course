@@ -8,3 +8,25 @@
   padding: 0 26px;
   box-sizing: border-box;
 }
+
+#testimony .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 855px) {
+  #testimony .inner-container {
+    padding: 0 0;
+  }
+  
+  #testimony .row {
+    flex-direction: row;
+  }
+  
+  #testimony .spacing-container {
+    margin: 0 auto 50px auto;
+    max-width: 600px;
+  }
+}

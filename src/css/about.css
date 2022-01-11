@@ -1,10 +1,11 @@
-#about .container {
-    margin: 80px 0;
+#about.container {
+    background-color: #F9F9FC;
+    padding: 110px 0;
 }
 
 #about .inner-container {
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1206px;
     padding: 0 0;
 }
 
