@@ -1,10 +1,10 @@
-#hero .transition {
+.reveal {
+    opacity: 0;
     transition: .5s;
 }
 
-#hero .opacity {
-    opacity: 0;
-    margin-left: 100px;
+.active {
+    opacity: 1;
 }
 
 a {
@@ -30,7 +30,7 @@ a {
 
 #hero.container {
     background-color: #F9F9FC;
-    padding: 50px 0; /* padding: 142px 0; desktop*/
+    padding: 50px 15px; /* padding: 142px 0; desktop*/
 }
 
 #hero .inner-container {

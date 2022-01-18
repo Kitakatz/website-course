@@ -16,6 +16,10 @@
   align-items: center;
 }
 
+#testimony .spacing-container {
+  margin-bottom: 60px;
+}
+
 @media (min-width: 855px) {
   #testimony .inner-container {
     padding: 0 0;
