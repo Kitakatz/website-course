@@ -1,0 +1,35 @@
+#primary-button.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 204px;
+    height: 70px;
+    color: #ffffff;
+    font-family: "Poppins-Medium";
+    text-transform: uppercase;
+    background-color: #5e3bee;
+    border: 5px #5e3bee;;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+#primary-button.button span {
+    margin-left: 11px;
+}
+
+#primary-button.button:hover path {
+    stroke: #5e3bee;
+}
+
+#primary-button.button:hover {
+    background-color: #ffffff;
+    border: 3px solid #5e3bee;
+    color: #5e3bee;
+}
+
+@media (min-width: 850px) {
+    #primary-button.button {
+        margin-bottom: 0px;
+        margin-right: 8px;
+    }
+}
