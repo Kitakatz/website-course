@@ -1,9 +1,8 @@
-
 #form.container {
     max-width: 320px;
     width: 100%;
-    background-color: #fff;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
+    background-color: #FFF;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
     border-radius: 8px;
     padding: 24px 35px;
 }
@@ -16,12 +15,12 @@
     display: block;
     font-family: 'Poppins-Bold';
     color: #4a5568;
-    margin-bottom: 10px;
-
+    margin-bottom: 8px;
 }
 
-#form input [type=text], 
-#form input [type=email] {
+#form input[type=text],
+#form input[type=email],
+#form input[type=tel] {
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -29,7 +28,64 @@
     font-family: 'Poppins-Regular';
     margin: 0;
     padding: 0 12px;
-    border: 1px solid #efefef;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+}
+
+#form input[type=text] {
+    text-transform: capitalize;
+}
+
+#form input[type=tel] {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#form .tel-country-code {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+#form .country-code-tel {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 38px;
+    font-family: 'Poppins-Medium';
+    color: #7F7F7F;
+    background-color: #EAEAEA;
+    border: 1px solid transparent;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding-top: 4px;
+}
+
+#form .max-characters {
+    position: relative;
+}
+
+#form .max-characters .character-count {
+    width: 100%;
+    font-size: 12px;
+    font-family: 'Poppins-Regular';
+    text-align: right;
+    color: #757575;
+    padding-top: 4px;
+}
+
+#form textarea {
+    resize: none;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100px;
+    font-family: 'Poppins-Regular';
+    margin: 0;
+    padding: 12px 12px;
+    border: 1px solid #EFEFEF;
     border-radius: 8px;
 }
 
@@ -46,5 +102,21 @@
     border: 5px #5e3bee;
     border-radius: 40px;
     cursor: pointer;
-    /* transition: 0.5s ease-in-out; */
+}
+
+#form .errors {
+    box-sizing: border-box;
+    font-family: 'Poppins-Medium';
+    color: red;
+    list-style-type: none;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+#form .hasErrors {
+    border: 1px solid red !important;
+    padding: 12px 12px !important;
+    margin: 15px 0 0 0 !important;
 }
