@@ -1,6 +1,6 @@
-import { checkCache, storeCache } from "../../utils";
-import { apiToken, apiUrl } from "../../api/credentials";
-import { getViewerRepository } from "../../api/github";
+import { checkCache, storeCache } from "../../utils.js";
+import { apiToken, apiUrl } from "../../api/credentials.js";
+import { getViewerRepository } from "../../api/github.js";
 
 const githubCardNode = document.getElementById('github-card');
 const anchorNode = githubCardNode.children[0];
@@ -51,19 +51,19 @@ function createCachedObject(repository) {
   }
 };
 
-async function callGithubRequest() {
-    let gitHubCache = checkCache('@GitHub');
-    gitHubCache = JSON.parse(gitHubCache);
+async function callGitHubRequest() {
+  let gitHubCache = checkCache('@GitHub');
+  gitHubCache = JSON.parse(gitHubCache);
 
-    if (gitHubCache) return renderCachedCardData(gitHubCache);
+  if (gitHubCache) return renderCachedCardData(gitHubCache);
 
-    const response = await getViewerRepository(apiUrl, apiToken);
-    const repository = response.data.viewer.pinnedItems.nodes[0];
+  const response = await getViewerRepository(apiUrl, apiToken);
+  const repository = response.data.viewer.pinnedItems.nodes[0];
 
-    const cachedObject = createCachedObject(repository);
-    storeCache('@GitHub', JSON.stringify(cachedObject));
+  const cachedObject = createCachedObject(repository);
+  storeCache('@GitHub', JSON.stringify(cachedObject));
 
-    renderCardData(repository);
-  };
+  renderCardData(repository);
+};
 
-export default callGithubRequest;
+export default callGitHubRequest;

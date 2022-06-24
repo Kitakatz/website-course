@@ -21,22 +21,22 @@
 }
 
 #github .inner-container {
-  margin: 0 auto;
-  max-width: 1206px;
-  padding: 0 0;
+    margin: 0 auto;
+    max-width: 1206px;
+    padding: 0 0;
 }
 
 #github .row {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 #github .column {
-  width: 100%;
+    width: 100%;
 }
 
-#github .t-heading3 {
+#github .t-heading3  {
   text-align: left;
   padding: 0 50px;
 }
@@ -48,8 +48,8 @@
 }
 
 #github .t-paragraph-dark {
-  padding: 0 50px;
-  margin-bottom: 40px;
+    padding: 0 50px;
+    margin-bottom: 40px;
 }
 
 #github .github-projects {
@@ -74,7 +74,7 @@
   min-height: 420px;
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05) !important;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)!important;
 }
 
 #github .github-projects .card .image {
@@ -101,7 +101,7 @@
   margin-bottom: 10px;
 }
 
-#github .github-projects .card .content .paragraph {
+#github .github-projects .card .content .paragraph { 
   opacity: 0.4;
   min-height: 72px;
   font-size: 16px;
@@ -111,25 +111,22 @@
   color: #000;
 }
 
-#github .github-projects .card .topics {
+#github .github-projects .card .topics { 
   overflow-x: scroll;
   box-sizing: border-box;
   display: inline-flex;
   max-width: 384px;
   width: 100%;
   padding: 8px 24px 16px 24px;
-  -ms-overflow-style: none;
-  /* for Internet Explorer, Edge */
-  scrollbar-width: none;
-  /* for Firefox */
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
 }
 
 #github .github-projects .card .topics::-webkit-scrollbar {
-  display: none;
-  /* for Chrome, Safari, and Opera */
+    display: none; /* for Chrome, Safari, and Opera */
 }
 
-#github .github-projects .card .topic {
+#github .github-projects .card .topic { 
   flex-shrink: 0;
   font-family: 'Poppins-Medium';
   font-weight: 500;
@@ -159,10 +156,7 @@
 }
 
 @media (min-width: 855px) {
-
-  #github .t-heading3,
-  #github .t-heading4-lg,
-  #github .t-paragraph-dark {
+  #github .t-heading3, #github .t-heading4-lg, #github .t-paragraph-dark {
     text-align: left;
   }
 }

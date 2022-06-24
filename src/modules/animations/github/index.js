@@ -4,7 +4,7 @@ let isInitialized = false;
 
 function delayAnimation(node, className, delayTime, isScrolledTo) {
   setTimeout(() => {
-      isScrolledTo ? node.classList.remove(className) : node.classList.add(className);
+    isScrolledTo ? node.classList.remove(className) : node.classList.add(className);
   }, delayTime);
 };
 

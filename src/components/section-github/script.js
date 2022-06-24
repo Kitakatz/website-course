@@ -53,16 +53,16 @@ function createCachedObject(repository) {
 };
 
 async function onClickHandler() {
-    let gitHubCache = checkCache('@GitHub');
-    gitHubCache = JSON.parse(gitHubCache);
+  let gitHubCache = checkCache('@GitHub');
+  gitHubCache = JSON.parse(gitHubCache);
 
-    if (gitHubCache) return renderCachedCardData(gitHubCache);
+  if (gitHubCache) return renderCachedCardData(gitHubCache);
 
-    const response = await getViewerRepository(apiUrl, apiToken);
-    const repository = response.data.viewer.pinnedItems.nodes[0];
+  const response = await getViewerRepository(apiUrl, apiToken);
+  const repository = response.data.viewer.pinnedItems.nodes[0];
 
-    const cachedObject = createCachedObject(repository);
-    storeCache('@GitHub', JSON.stringify(cachedObject));
-
-    renderCardData(repository);
-  };
+  const cachedObject = createCachedObject(repository);
+  storeCache('@GitHub', JSON.stringify(cachedObject));
+  
+  renderCardData(repository); 
+};

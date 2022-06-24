@@ -2,8 +2,8 @@
 @import './global/fonts.css';
 @import './global/typography.css';
 @import './global/center-content.css';
-@import './global/overlay.css';
 @import './form/form.css';
+@import './global/overlay.css';
 @import './header/header.css';
 @import './header/hamburger-menu.css';
 @import './buttons/button.css';

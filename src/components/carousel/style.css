@@ -1,61 +1,66 @@
-#slider {
-    position: relative;
+.active {
+    opacity: 1;
+}
+
+.container {
+    position:relative;
     display: flex;
     overflow: hidden;
     width: 100%;
     border: 1px solid black;
 }
 
-#slider-container {
+ul {
     position: relative;
     display: inline-flex;
     height: 400px;
     list-style-type: none;
     padding: 0;
-    width:100%;
     margin: 0;
     transition: 0.5s;
 }
 
-#slider-container li {
+li {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-shrink: 0;
-    font-size: 30px;
-    color: white;
     opacity: 1;
     height: 400px;
+    transition: 1s;
 }
 
-#slider-container li .number {
+.number {
+    z-index: 9999;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
+    font-size: 60px;
+    font-weight: bold;
+    color: #FFF;
 }
 
-#slider-container li img {
+img {
+    display: block;
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
 
-#slider .navigation-previous {
+.navigationPrev {
+    z-index: 9999;
     position: absolute;
-    top: 0;
-    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 0;
+    left: 0;
     width: 100px;
     height: 100%;
-}
-
-.navigation-previous .arrow {
+  }
+  
+  .navigationPrev .arrow {
     width: 50px;
     height: 50px;
     background-color: transparent;
@@ -63,18 +68,19 @@
     cursor: pointer;
 }
 
-#slider .navigation-next {
+.navigationRight {
+    z-index: 9999;
     position: absolute;
-    top: 0;
-    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 0;
+    right: 0;
     width: 100px;
     height: 100%;
-}
-
-.navigation-next .arrow {
+  }
+  
+  .navigationRight .arrow {
     width: 50px;
     height: 50px;
     background-color: transparent;

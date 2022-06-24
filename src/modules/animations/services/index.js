@@ -1,16 +1,16 @@
 function delayAnimation(node, className, delayTime, isScrolledTo) {
-  return new Promise((resolve, reject) => {    
-      setTimeout(() => {
-        isScrolledTo ? node.classList.remove(className) : node.classList.add(className);
-        resolve(1);
-      }, delayTime);
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      isScrolledTo ? node.classList.remove(className) : node.classList.add(className);
+      resolve(1);
+    }, delayTime);
   });
 };
 
 function delayAnimations(nodes, delayTime, isScrolledTo) {
   setTimeout(() => {
-    for ( let index = 0; index < nodes.length; index++ ) {
-      delayAnimation(nodes[index], 'opacity', index * 100, isScrolledTo); 
+    for (let index = 0; index < nodes.length; index++) {
+      delayAnimation(nodes[index], 'opacity', index * 100, isScrolledTo);
     }
   }, delayTime);
 };

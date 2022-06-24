@@ -35,5 +35,5 @@ const QUERY = {
 };
 
 export {
-    QUERY
+  QUERY
 };

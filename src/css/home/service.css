@@ -1,48 +1,49 @@
 #service .transition {
-    position: relative;
-    transition: 0.5s ease-in-out;
-    top: 0px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+  top: 0px;
 }
 
 #service .opacity {
-    opacity: 0;
-    top: 100px !important;
+  opacity: 0;
+  top: 100px !important;
 }
 
 #service.container {
-    margin-bottom: 64px;
+  margin: 64px 0;
 }
 
-#service .inner-container {   
-    padding: 0 28px;
+#service .inner-container {
+  padding: 0 28px;
 }
 
 #service .t-heading4-lg {
-    color: #333333 !important;
+  color: #333333 !important;
 }
 
 #service .t-paragraph-light {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 #service .cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 @media (min-width: 850px) {
-    #service .paragraph-container {
-        margin: 0 auto;
-        max-width: 596px;
-    }
+  #service .paragraph-container {
+    margin: 0 auto;
+    max-width: 596px;
+  } 
 
-    #service .t-heading4-lg-fix {
-        margin-bottom: 34px !important;
-      }
+  #service .t-heading4-lg-fix {
+    margin-bottom: 34px !important;
+  }
 
-    #service .cards {
-        flex-direction: row;
-        padding: 0 15px;
-    }
+  #service .cards {
+    flex-direction: row;
+    padding: 0 15px;
+  }
 }

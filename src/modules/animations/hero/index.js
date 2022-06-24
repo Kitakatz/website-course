@@ -1,50 +1,40 @@
-function delayAnimation(node, className, delayTime) {
-    setTimeout(() => {
-        node.classList.remove(className);
-    }, delayTime);
-};
 
-
-function loadHeroAnimations() {
-    console.log('Hero animations loaded!');
-    // const animateHeadingElement = document.getElementById('animateHeading');
-    // const animateParagraphElement = document.getElementById('animateParagraph');
-    // const animateButtonsElement = document.getElementById('animateButtons');
-
-
-    // window.addEventListener('scroll', function() {
-    //     console.log('scroll listener is active');
-    // });
-
-    // delayAnimation(animateHeadingElement, 'opacity', 500);
-    // delayAnimation(animateParagraphElement, 'opacity', 1000);
-    // delayAnimation(animateButtonsElement, 'opacity', 1500);
-
-};
-
-export default loadHeroAnimations;
-
-
-/* For next class */
-
-// const heroAnimation = {
-//   isTriggered: false
+// const animationState = {
+//   hasAnimated: false
 // };
 
-// window.addEventListener('scroll', function() {
-//     const node2 = document.getElementById('node2');
-//     const scrolled = Math.ceil(window.scrollY);
-//     const elementOffSet = Math.ceil(window.pageYOffset + node2.getBoundingClientRect().top);
+// function delayAnimation(node, className, delayTime) {
+//   setTimeout(() => {
+//     node.classList.remove(className);
+//   }, delayTime);
+// };
 
-//     if (scrolled >= elementOffSet) {
-//       console.log('Animation past that point');
-//       heroAnimation.isTriggered = true;
-//       console.log('isTriggered: ', heroAnimation);
-//     } else {
-//       heroAnimation.isTriggered = false;
-//       console.log('isTriggered: ', heroAnimation);
+// function delayAnimations(nodes, delayTime) {
+//   console.log('nodes: ', nodes);
+//   setTimeout(() => {
+//     for (let index = 0; index < nodes.length; index++) {
+//       delayAnimation(nodes[index], 'opacity', index * 100);
 //     }
+//   }, delayTime);
+// }
 
-//     console.log('scrolled', scrolled);
-//     console.log('elementOffSet', elementOffSet);
-//   });
+
+// function loadHeroAnimations() {
+//   if ( animationState.hasAnimated ) return;
+
+//   console.log('Hero animations loaded!');
+//   animationState.hasAnimated = !animationState.hasAnimated;
+//   console.log('animationState.hasAnimated', animationState.hasAnimated);
+//   const serviceHeadingElement = document.getElementById('serviceHeading');
+//   const serviceSubHeadingElement = document.getElementById('serviceSubHeading');
+//   const serviceContentElement = document.getElementById('serviceContent');
+//   const cardServicesElements = document.querySelectorAll('#card-services');
+
+//   delayAnimation(serviceHeadingElement, 'opacity', 0);
+//   delayAnimation(serviceSubHeadingElement, 'opacity', 500);
+//   delayAnimation(serviceContentElement, 'opacity', 1000);
+//   delayAnimations(cardServicesElements, 1500);
+
+// };
+
+// export default loadHeroAnimations;

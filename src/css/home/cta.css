@@ -1,7 +1,6 @@
 #cta.container {
   box-sizing: border-box;
   width: 100%;
-  height: 464px;
   padding: 0 25px;
   margin-bottom: 64px;
 }
@@ -9,9 +8,10 @@
 #cta .inner-container {
   margin: 0 auto;
   max-width: 1206px;
-  border-radius: 22px;
+  width: 100%;
   background: url('../../../assets/images/background-cta.png') #f9f9fc no-repeat center center;
   background-size: cover;
+  border-radius: 22px;
   padding: 73px 0;
 }
 
@@ -23,7 +23,7 @@
   text-transform: capitalize;
   line-height: 52px;
   letter-spacing: 1.2px;
-  color: #333;
+  color: #333333;
   margin-bottom: 46px;
 } 
 

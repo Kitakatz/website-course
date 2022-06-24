@@ -1,10 +1,11 @@
+
 #form.container {
   z-index: 9999999;
   position: absolute;
   max-width: 320px;
   width: 100%;
   background-color: #FFF;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -1px rgba(0,0,0,.06);
   border-radius: 8px;
   padding: 24px 35px;
 }
@@ -20,7 +21,7 @@
   margin-bottom: 8px;
 }
 
-#form input[type=text],
+#form input[type=text], 
 #form input[type=email],
 #form input[type=tel] {
   box-sizing: border-box;
@@ -31,7 +32,7 @@
   margin: 0;
   padding: 0 12px;
   border: 1px solid #EFEFEF;
-  border-radius: 8px;
+  border-radius: 8px; 
 }
 
 #form input[type=text] {

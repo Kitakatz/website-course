@@ -1,39 +1,39 @@
 const QUERY = {
-    query: `{
-      viewer {
-        anyPinnableItems
-        bio
-        followers(first: 1) {
-          nodes {
-            name
-            email
-          }
-          totalCount
+  query: `{
+    viewer {
+      anyPinnableItems
+      bio
+      followers(first: 1) {
+        nodes {
+          name
+          email
         }
-        pinnedItems(first: 6) {
-          nodes {
-            ... on Repository {
-              name
-              description
-              url
-              openGraphImageUrl
-              repositoryTopics(first: 6) {
-                nodes {
-                  resourcePath
-                  topic {
-                    name
-                  }
-                  url
+        totalCount
+      }
+      pinnedItems(first: 6) {
+        nodes {
+          ... on Repository {
+            name
+            description
+            url
+            openGraphImageUrl
+            repositoryTopics(first: 6) {
+              nodes {
+                resourcePath
+                topic {
+                  name
                 }
+                url
               }
             }
           }
-          totalCount
         }
+        totalCount
       }
-    }`
-  };
-  
-  export {
-      QUERY
-  };
+    }
+  }`
+};
+
+export {
+  QUERY
+};

@@ -21,20 +21,20 @@ function delayAnimation(node, className, delayTime, isScrolledTo) {
 
 function delayAnimationsLeft(nodes, delayTime, isScrolledTo) {
   setTimeout(() => {
-    for ( let index = 0; index < nodes.length; index++ ) {
-      delayAnimation(nodes[index], 'hide-left', index * 500, isScrolledTo); 
+    for (let index = 0; index < nodes.length; index++) {
+      delayAnimation(nodes[index], 'hide-left', index * 500, isScrolledTo);
     }
   }, delayTime);
 };
 
 function delayAnimationsRight(nodes, delayTime, isScrolledTo) {
   setTimeout(() => {
-    for ( let index = 0; index < nodes.length; index++ ) {
-      delayAnimation(nodes[index], 'hide-right', index * 500, isScrolledTo); 
+    for (let index = 0; index < nodes.length; index++) {
+      delayAnimation(nodes[index], 'hide-right', index * 500, isScrolledTo);
     }
   }, delayTime);
 };
-     
+
 async function loadPortfolioAnimations(isScrolledTo) {
   //Headers
   // const portfolioCardsLeftElement = document.querySelectorAll('#selected-work-card-left');
@@ -45,9 +45,9 @@ async function loadPortfolioAnimations(isScrolledTo) {
   const portfolioCardsRightElement = document.querySelectorAll('#selected-work-card-right');
 
   // await delayAnimation(portfolioTitleRight, 'hide-right', 300, isScrolledTo); 
-   
+
   await delayAnimationsLeft(portfolioCardsLeftElement, 750, isScrolledTo);
   await delayAnimationsRight(portfolioCardsRightElement, 750, isScrolledTo);
 };
-  
+
 export default loadPortfolioAnimations;

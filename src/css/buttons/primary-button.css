@@ -13,10 +13,6 @@
     cursor: pointer;
 }
 
-#primary-button.button span {
-    margin-left: 11px;
-}
-
 #primary-button.button:hover path {
     stroke: #5e3bee;
 }
@@ -27,9 +23,9 @@
     color: #5e3bee;
 }
 
-@media (min-width: 850px) {
-    #primary-button.button {
-        margin-bottom: 0px;
-        margin-right: 8px;
-    }
+@media (min-width: 850px) { 
+  #primary-button.button {
+      margin-bottom: 0px;
+      margin-right: 8px;
+  }
 }
