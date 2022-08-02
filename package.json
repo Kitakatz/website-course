@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/triedbyseven/website-course.git"
+    "url": "git+https://github.com/Kitakatz/website-course"
   },
   "author": "Michael Camacho",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/triedbyseven/website-course/issues"
+    "url": "https://github.com/Kitakatz/website-course/issues"
   },
-  "homepage": "https://github.com/triedbyseven/website-course#readme",
+  "homepage": "https://github.com/Kitakatz/website-course#readme",
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
